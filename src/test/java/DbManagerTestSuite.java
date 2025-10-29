@@ -60,4 +60,7 @@ public class DbManagerTestSuite {
         //!!! I deleted previous databases to revise the material, that's why there are not many records there.
         Assertions.assertEquals(1, recordsNum);
     }
+
+    public static class StoredProcTestSuite {
+    }
 }

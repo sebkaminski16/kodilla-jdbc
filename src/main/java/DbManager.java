@@ -10,11 +10,11 @@ public enum DbManager {
 
     DbManager() {
         Properties connectionProperties = new Properties();
-        connectionProperties.put("user", "kodilla_user");
-        connectionProperties.put("password", "kodilla_Pass123");
+        connectionProperties.put("user", "root");
+        connectionProperties.put("password", "root");
         try {
             this.connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/kodilla_course" +
+                    "jdbc:mysql://localhost:3306/learning_sql_again" +
                             "?serverTimeZone=Europe/Warsaw" +
                             "&useSSL=False&allowPublicKeyRetrieval=true", connectionProperties);
         } catch (SQLException sqlException) {
